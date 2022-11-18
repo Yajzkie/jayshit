@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>SLSU -Bontoc Campus</title>
-        <link rel="icon" type="image/x-icon" href="{{ asset('logo.png') }}" />
+        <link rel="icon" type="image/x-icon" href="{{ asset('img/logo.png') }}" />
         <!-- Font Awesome icons (free version)-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.0/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
