@@ -1,5 +1,24 @@
 @extends('layouts.home')
 @section('content')
+<style>
+        /* Custom CSS for iframe responsiveness */
+        .embed-responsive {
+            position: relative;
+            display: block;
+            width: 88%;
+            height:327px;
+            padding: 0;
+            overflow: hidden;
+        }
+        .embed-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
         <!-- Background Video-->
         <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="{{ asset('vdo/slsubc.mp4') }}" type="video/mp4" /></video>
         <!-- Masthead-->
@@ -27,8 +46,7 @@
                                         <li><span class="fa fa-globe"> </span> Website: <a href="http://www.slsuonline.edu.ph">www.southernleytestateu.edu.ph</a></li>
                                     </ul>
                                 </div></p>
-                               
-                                <!--<span style="font-size: 10px;">Backgound Video | Source: https://southernleytestateu.edu.ph/index.php/en/bontoc-campus </span>-->
+                               <!--<span style="font-size: 10px;">Backgound Video | Source: https://southernleytestateu.edu.ph/index.php/en/bontoc-campus </span>-->
                         </div>
                     </div>
                 </div>
@@ -70,14 +88,19 @@
                                  <img style="display:block;width: 100%;"src="img/slsuask.png">
                             </a>
                         </div>
+                         <div class="col-sm-2 col-5 m-1 text-center" style="background: white;border-radius: 8px;">
+                            <a href="https://slsubc.com/3dmodel" target="_blank">
+                                 <img style="display:block;width: 100%;"src="img/slsu3D.png">
+                            </a>
+                            <span>3D Model</span>
+                        </div>
                     </div>
+                    
                     <div class="row m-auto">
-                        
-                        <!--<div class="col-sm-2 col-5 m-1" style="background-color: cadetblue;">-->
-                        <!--    <a href="" target="_blank">-->
-                        <!--         <img style="display:block;width: 100%;"src="img/survey.png">-->
-                        <!--    </a>-->
-                        <!--</div>-->
+                        <div class="embed-responsive embed-responsive-16by9 m-1">
+                            <!--<iframe src="https://3dwarehouse.sketchup.com/embed/f6f6e760-8fea-4d44-ba80-c34eb4f7af71?token=aldWunJp-Rw=&binaryName=s21" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen autoplay></iframe>-->
+                             <!--<iframe src="https://3dwarehouse.sketchup.com/embed/32386b20-f081-46e6-8b0b-4825ee409407?token=M24eDiP0F9o=&binaryName=s21" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>-->
+                        </div>
                         <!--<div class="col-sm-2 col-5 m-1" style="background-color: #15157e;">-->
                         <!--    <a href="https://web.facebook.com/slsu.bontoc" target="_blank">-->
                         <!--         <img style="display:block;width: 100%;"src="img/slsubcfb.png">-->

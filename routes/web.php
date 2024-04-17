@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
+// Route::get('/ok', function () {
+//     return "view('welcome')";
 // });
-
-Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home');
+Route::group(['namespace' => 'App\Http\Controllers'], function () {
+    Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/3dmodel', 'SLSUModelController@slsu_model')->name('model');
+});
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
