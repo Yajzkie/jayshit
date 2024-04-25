@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use App\Http\Controllers\HomeController;
+=======
+>>>>>>> aac1be0 (first commit)
 
 /*
 |--------------------------------------------------------------------------
