@@ -20,7 +20,7 @@
         }
     </style>
         <!-- Background Video-->
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="{{ asset('vdo/slsubc.mp4') }}" type="video/mp4" /></video>
+        <!-- <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="{{ asset('vdo/slsubc.mp4') }}" type="video/mp4" /></video> -->
         <!-- Masthead-->
         <div class="container-fluid" style="height: inherit;">
             <div class="row" style="height: inherit;">
@@ -140,6 +140,12 @@
                         </div> -->
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8"></div>
+                <div class="col-sm-4"></div>
             </div>
         </div>
         <!-- Bootstrap core JS-->

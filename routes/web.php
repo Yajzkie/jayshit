@@ -22,6 +22,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/3dmodel', 'SLSUModelController@slsu_model')->name('model');
 });
 
+
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
