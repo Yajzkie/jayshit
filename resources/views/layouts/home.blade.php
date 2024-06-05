@@ -44,6 +44,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">About</a>
                 </li>
+                <!-- <li>
+                  <a class="nav-link" href="http://slsubc.com.test/news">See More</a>
+                </li> -->
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                   <div class="dropdown-menu">

@@ -20,6 +20,7 @@ use App\Http\Controllers\HomeController;
 Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/', 'HomeController@index')->name('home');
     Route::get('/3dmodel', 'SLSUModelController@slsu_model')->name('model');
+    Route::get('/news', 'NewsController@news')->name('news');
 });
 
 
